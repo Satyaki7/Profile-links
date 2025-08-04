@@ -1,13 +1,12 @@
 import InfiniteMenu from "../Blocks/Components/InfiniteMenu/InfiniteMenu";
-import gmailImg from "./assets/gmail.webp";
-import linkedinImg from "./assets/005-linkedin.png";
-import discordImg from "./assets/discord.jpeg";
-import instagramImg from "./assets/002-instagram.png";
-import leetcodeImg from "./assets/leetcode.png";
-import portfolioImg from "./assets/webpage.png";
-import twitterImg from "./assets/twitter.jpg";
-import githubImg from "./assets/github.webp";
-
+import gmailImg from "../assets/gmail.webp";
+import linkedinImg from "../assets/005-linkedin.png";
+import discordImg from "../assets/discord.jpeg";
+import instagramImg from "../assets/002-instagram.png";
+import leetcodeImg from "../assets/leetcode.png";
+import portfolioImg from "../assets/webpage.png";
+import twitterImg from "../assets/twitter.jpg";
+import githubImg from "../assets/github.webp";
 function MenuLinks() {
  const items = [
    {
@@ -24,7 +23,7 @@ function MenuLinks() {
    },
    {
      image: discordImg,
-     link: "https://google.com/",
+     link: "https://discord.gg/ZKGQ8DmH",
      title: "Discord",
      description: "This is where I chill with the community.",
    },
