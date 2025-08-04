@@ -51,7 +51,7 @@
 
 .face-title.active {
   opacity: 1;
-  transform: translate(20%, -50%);
+  transform: translate(30%, -200%);
   pointer-events: auto;
   transition: 0.5s ease;
   color: whitesmoke;
@@ -76,7 +76,7 @@
 
 .face-description.active {
   opacity: 1;
-  transform: translate(-90%, -50%);
+  transform: translate(-120%, -50%);
   pointer-events: auto;
   transition: 0.5s ease;
 }
@@ -99,12 +99,7 @@
   opacity: 1;
   pointer-events: auto;
   transition: 0.5s ease;
-  background-image: url("/src/assets/share.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
+  background-color: whitesmoke;
 }
 
 .action-button.inactive {
@@ -113,4 +108,26 @@
   opacity: 0;
   pointer-events: none;
   transition: 0.1s ease;
+}
+
+.action-button-icon {
+  background-image: url("/src/assets/share.png");
+  background-color: whitesmoke;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+@media (max-width: 768px) and (max-height: 1200px) {
+  .face-title.active {
+    transform: translate(-20%, -400%);
+    font-size: 56px;
+  }
+
+  .face-description.active {
+    display: none;
+  }
 }

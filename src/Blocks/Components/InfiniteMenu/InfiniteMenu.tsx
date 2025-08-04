@@ -1293,6 +1293,7 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
           <h2 className={`face-title ${isMoving ? "inactive" : "active"}`}>
             {activeItem.title}
           </h2>
+          
 
           <p className={`face-description ${isMoving ? "inactive" : "active"}`}>
             {activeItem.description}
@@ -1302,9 +1303,9 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
             onClick={handleButtonClick}
             className={`action-button ${isMoving ? "inactive" : "active"}`}
           >
-            <p className="action-button-icon">
+            <div className="action-button-icon">
               
-            </p>
+            </div>
           </div>
         </>
       )}
